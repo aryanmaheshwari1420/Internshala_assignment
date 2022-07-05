@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new
 
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -62,8 +63,14 @@ class screen extends StatelessWidget {
               ),
               child: Column(
                 children: [
+                  new DotsIndicator(
+                    dotsCount: 3,
+                    decorator: DotsDecorator(
+                      colors:[Colors.grey,Colors.grey,Colors.grey],   
+                      ),
+                    ),
                   
-                  SizedBox(height: 50,),
+                  SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
