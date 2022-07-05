@@ -58,10 +58,8 @@ class screen extends StatelessWidget {
               child: Column(
                 children: [
                   new DotsIndicator(
-                    
                     dotsCount: 3,
                     decorator: DotsDecorator(
-                      
                       activeColor: Colors.black,
                       colors: [Colors.grey, Colors.grey, Colors.grey],
                     ),
